@@ -1,0 +1,12 @@
+/*
+Theme Name: YPress
+Theme URI: http://kyymca.org
+Description: A responsive theme built to comply with brand standards of the Y.
+Author: Eric Pait
+Author URI: http://ericpait.com/
+Version: 1.0
+*/
+
+a.black_arrow:visited {
+    color: #000000 !important;
+}
