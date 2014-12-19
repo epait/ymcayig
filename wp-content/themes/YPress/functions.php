@@ -284,8 +284,6 @@ function wpt_admin_color_schemes() {
   $theme_color = get_field('theme_color', 'option');
   $theme_dir = get_stylesheet_directory_uri(); 
 
-  echo '<script>console.log("'.$theme_color.'");</script>';
-
   if ($theme_color == 'purple')
     $array = array('#fff', '#5c2e91', '#92278f', '#c6168d');
 
