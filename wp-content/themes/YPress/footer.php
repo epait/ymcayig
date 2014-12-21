@@ -9,7 +9,7 @@
 						<?php $copyright = get_field('copyright', 'option'); if ( $copyright != NULL ) { ?><?php the_field('copyright', 'option') ?><br><?php } ?>
 						<?php $organization = get_field('organization', 'option'); if ( $organization != NULL ) { ?><?php the_field('organization', 'option') ?><br><?php } ?>
 						<?php $website = get_field('website', 'option'); if ( $website != NULL ) { ?><a href="http://<?php the_field('website', 'option') ?>"><?php the_field('website', 'option') ?></a><br><?php } ?>
-						Web Development by <a href="http://www.ericpait.com">Eric Pait Visuals</a>
+						Web Development by <a href="http://www.ericpait.com">Eric Pait</a>
 					</p>
 				</div>
 			</div>
@@ -69,22 +69,10 @@
 		        	navPrevNext: false,
 		        	pauseOnHover: false,
 		        	animateFirstSlide: false
-		        	// skin: 'noskin'
-		            // Slider options goes here,
-		            // please check the 'List of slider options' section in the documentation
 		        });
 		    });
 	    </script>
 		<div id="fb-root"></div>
-		<script>
-		// 	(function(d, s, id) {
-		//  	var js, fjs = d.getElementsByTagName(s)[0];
-		//   	if (d.getElementById(id)) return;
-		//   	js = d.createElement(s); js.id = id;
-		//   	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=248181015197587";
-		//  	 fjs.parentNode.insertBefore(js, fjs);
-		// 	}(document, 'script', 'facebook-jssdk'));
-		</script>
 		<?php wp_footer(); ?>
 </body>
 </html>
