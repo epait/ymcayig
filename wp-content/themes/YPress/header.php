@@ -74,11 +74,11 @@
 
 				  </form>
 
-			      <a class="brand" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/img/<?php the_field('theme_color', 'option'); ?>/yLogo.png"></a>
+			      <a class="brand" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/<?php the_field('theme_color', 'option'); ?>/yLogo.png"></a>
 
 				  <div id="logo">
 
-				   <a href="<?php echo home_url( '/' ); ?>"><?php the_field('header_top_row', 'option'); ?><br><span id="secondRow"><?php the_field('header_bottom_row', 'option'); ?></span>
+				   <a href="<?php echo home_url( '/' ); ?>"><span class="hidden-xs"><?php the_field('header_title', 'option'); ?></span><span class="visible-xs"><?php the_field('header_mobile_title', 'option'); ?></span></a>
 
 				   <span class="pull-right hidden-xs header-right">
 

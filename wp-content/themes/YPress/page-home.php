@@ -11,13 +11,6 @@ Template Name: Home Page
 <?php get_header(); ?>
 
 <div class="row-fluid">
-
-	<div class="homepage-button-wrapper clearfix visible-xs">
-
-		<?php if ( dynamic_sidebar('home_top_sidebar') ) : else : endif; ?>	
-
-	</div>
-
 	<div class="col-sm-8">
 
 		<div class="layerslider">
@@ -70,15 +63,15 @@ Template Name: Home Page
 
 		</div>
 
-		<div class="row main-content">
-			<div class="col-md-6">
-				<div class="homeTitle"><h4>In the News</h4></div>
+		<div class="row-fluid main-content">
+			<div class="col-sm-12">
+				<div class="homeTitle"><h4>Youth and Government News</h4></div>
 
 				<hr class="">
 
 				<div class="posts-wrapper">
 
-					<?php query_posts('posts_per_page=5&cat=16'); ?>
+					<?php query_posts('posts_per_page=5&cat=-2'); ?>
 
 				    <?php if (have_posts()) : ?>
 
@@ -112,48 +105,14 @@ Template Name: Home Page
 
 				</div>
 
-			    <a id="previousPosts" class="black_arrow pull-right clearfix" href="./in-the-news">Previous Posts</a>
-			    <div style="clear: both;"></div>
-			</div>
-			<div class="col-md-6">
-
-				<div class="homeTitle"><h4>KY YMCA Blog</h4></div>
-
-				<hr class="">
-
-				<div class="posts-wrapper">
-
-					<?php query_posts('posts_per_page=5&cat=17'); ?>
-
-				    <?php if (have_posts()) : ?>
-
-				    <?php while (have_posts()) : the_post(); ?>    
-
-				        <div class="post">
-
-			                <div class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-
-			                <div class="post-author">By <a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php the_author_meta('display_name'); ?></a> on  <?php the_time(get_option('date_format')); ?></div>
-
-			                <div class="excerpt"><?php the_excerpt(); ?></div>
-
-			                <a class="black_arrow" href="<?php the_permalink(); ?>">READ MORE</a>
-
-				        </div> 
-
-				    <?php endwhile; ?>
-
-				    <?php endif; ?>
-
-				</div>
-
-			    <a id="previousPosts" class="black_arrow pull-right clearfix" href="./blog">Previous Posts</a>
+			    <a id="previousPosts" class="black_arrow pull-right clearfix" href="./news">Previous Posts</a>
 			    <div style="clear: both;"></div>
 			</div>
 
 		</div>
 
 	</div>
+</div>
 
 <?php get_sidebar(); ?>
 
