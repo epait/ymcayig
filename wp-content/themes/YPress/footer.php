@@ -18,16 +18,12 @@
 					<p>
 						<?php $phone = get_field('contact_phone', 'option'); if ( $phone != NULL ) { ?><i class="fa fa-phone footer-icon"></i><span id="phoneFooter"><?php the_field('contact_phone', 'option') ?></span><br><?php } ?>
 						<?php $email = get_field('contact_email', 'option'); if ( $email != NULL ) { ?><i class="fa fa-envelope-o footer-icon"></i><span id="emailFooter"><a href="mailto:<?php the_field('contact_email', 'option') ?>"><?php the_field('contact_email', 'option') ?></a></span><br><?php } ?>
-						<?php $twitter = get_field('contact_twitter', 'option'); if ( $twitter != NULL ) { ?><i class="fa fa-twitter footer-icon"></i><span id="twitterFooter"><a target="_blank" href="http://twitter.com/<?php the_field('contact_twitter', 'option') ?>">@<?php the_field('contact_twitter', 'option') ?></a></span><br><?php } ?>
-						<?php $facebook = get_field('contact_facebook', 'option'); if ( $facebook != NULL ) { ?><i class="fa fa-facebook footer-icon"></i><span id="fbFooter"><a target="_blank" href="http://facebook.com/<?php the_field('contact_facebook', 'option') ?>"><?php the_field('contact_facebook', 'option') ?></a></span><?php } ?>
 					</p>
 				</div>
 				<div class="footer-right visible-xs">
 					<p>
 						<?php $phone = get_field('contact_phone', 'option'); if ( $phone != NULL ) { ?><i class="fa fa-phone footer-icon"></i><span id="phoneFooter"><?php the_field('contact_phone', 'option') ?></span><br><?php } ?>
 						<?php $email = get_field('contact_email', 'option'); if ( $email != NULL ) { ?><i class="fa fa-envelope-o footer-icon"></i><span id="emailFooter"><a href="mailto:<?php the_field('contact_email', 'option') ?>"><?php the_field('contact_email', 'option') ?></a></span><br><?php } ?>
-						<?php $twitter = get_field('contact_twitter', 'option'); if ( $twitter != NULL ) { ?><i class="fa fa-twitter footer-icon"></i><span id="twitterFooter"><a target="_blank" href="http://twitter.com/<?php the_field('contact_twitter', 'option') ?>">@<?php the_field('contact_twitter', 'option') ?></a></span><br><?php } ?>
-						<?php $facebook = get_field('contact_facebook', 'option'); if ( $facebook != NULL ) { ?><i class="fa fa-facebook footer-icon"></i><span id="fbFooter"><a target="_blank" href="http://facebook.com/<?php the_field('contact_facebook', 'option') ?>"><?php the_field('contact_facebook', 'option') ?></a></span><?php } ?>
 					</p>
 				</div>
 			</div>

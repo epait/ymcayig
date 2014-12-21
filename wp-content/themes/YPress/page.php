@@ -16,12 +16,24 @@
 		  						<div id="bc_right"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
 		  					</div>
 	            			<div class="pageTitle"><?php the_title(); ?></div>
-							<br />
-							<?php the_content() ?>
-							<br />
-							<?php the_field('section_two', 'option') ?>
-							<br />
-							<?php the_field('section_three', 'option') ?>
+							<div class="pageContent">
+								<?php the_content() ?>
+								<?php
+									// check if the repeater field has rows of data
+									if( have_rows('page_sections') ): ?>
+										<br />
+										<?php 
+									 	// loop through the rows of data
+									    while ( have_rows('page_sections') ) : the_row();
+									        // display a sub field value
+									        the_sub_field('additional_section');
+									        ?> <br /> <?php 
+									    endwhile;
+									else :
+									    // no rows found
+									endif;
+								?>
+							</div>
 	            		<?php endwhile; ?>
 	            	<?php endif; ?>
 	            </div>
