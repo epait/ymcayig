@@ -32,7 +32,7 @@ if ( function_exists('register_sidebar') ) {
 
         'id' => 'home_sidebar',
 
-        'before_widget' => '<div class="sidebarTopWidgets">',
+        'before_widget' => '<div class="sidebarWidgets">',
 
         'after_widget' => '</div>',
 

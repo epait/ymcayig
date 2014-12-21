@@ -174,7 +174,7 @@ img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 		padding: 0 15px;
 	}
 	.navbar-header {
-		padding: 0 !important;
+		padding: 0 0 15px 0 !important;
 	}
 }
 @media (max-width: 767px) {
@@ -794,24 +794,14 @@ button.sidebar-button:hover {
 	background-color: #0060af;
 	/*color: #0060af;*/
 }
-.sidebarBottomWidgets {
+.sidebarWidgets {
 	padding-bottom: 5px;
+	margin-left: 15px;
 }
-.sidebarTopWidgets {
-	padding: 7.5px 0;
-}
-.sidebarTopWidgets:first-child {
-	margin-top: 7.5px;
-}
-.sidebarBottomWidgets h4, .sidebarTopWidgets h4 {
+.sidebarWidgets h4 {
 	padding-bottom: 5px;
 	border-bottom: 1px dotted #000;
 }
- @media (max-width: 759px) {
- 	.sidebarTopWidgets {
- 		margin: 0 15px;
- 	}
- }
 ul.gce-list {
 	list-style-type: none;
 	margin-left: 0px;
