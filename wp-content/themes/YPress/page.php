@@ -16,24 +16,22 @@
 		  						<div id="bc_right"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
 		  					</div>
 	            			<div class="pageTitle"><?php the_title(); ?></div>
-							<div class="pageContent">
-								<?php the_content() ?>
-								<?php
-									// check if the repeater field has rows of data
-									if( have_rows('page_sections') ): ?>
-										<br />
-										<?php 
-									 	// loop through the rows of data
-									    while ( have_rows('page_sections') ) : the_row();
-									        // display a sub field value
-									        the_sub_field('additional_section');
-									        ?> <br /> <?php 
-									    endwhile;
-									else :
-									    // no rows found
-									endif;
-								?>
-							</div>
+							<?php the_content() ?>
+							<?php
+								// check if the repeater field has rows of data
+								if( have_rows('page_sections') ): ?>
+									<br />
+									<?php 
+								 	// loop through the rows of data
+								    while ( have_rows('page_sections') ) : the_row();
+								        // display a sub field value
+								        the_sub_field('additional_section');
+								        ?> <br /> <?php 
+								    endwhile;
+								else :
+								    // no rows found
+								endif;
+							?>
 	            		<?php endwhile; ?>
 	            	<?php endif; ?>
 	            </div>
