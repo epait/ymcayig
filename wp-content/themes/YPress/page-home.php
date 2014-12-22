@@ -11,7 +11,7 @@ Template Name: Home Page
 <?php get_header(); ?>
 
 <div class="row-fluid">
-	<div class="col-sm-8">
+	<div class="col-sm-12">
 
 		<div class="layerslider">
 
@@ -62,57 +62,54 @@ Template Name: Home Page
 	            <?php endif; ?>
 
 		</div>
+	</div>
+</div>
+<div class="row-fluid main-content">
+	<div class="col-sm-8">
+		<div class="homeTitle"><h4>Youth and Government News</h4></div>
 
-		<div class="row-fluid main-content">
-			<div class="col-sm-12">
-				<div class="homeTitle"><h4>Youth and Government News</h4></div>
+		<hr class="">
 
-				<hr class="">
+		<div class="posts-wrapper">
 
-				<div class="posts-wrapper">
+			<?php query_posts('posts_per_page=5&cat=-2'); ?>
 
-					<?php query_posts('posts_per_page=5&cat=-2'); ?>
+		    <?php if (have_posts()) : ?>
 
-				    <?php if (have_posts()) : ?>
+		    <?php while (have_posts()) : the_post(); ?>    
 
-				    <?php while (have_posts()) : the_post(); ?>    
+		        <div class="post">
 
-				        <div class="post">
+		            <!-- <div class="row"> -->
 
-				            <!-- <div class="row"> -->
+		                <!-- <div class="col-sm-12"> -->
 
-				                <!-- <div class="col-sm-12"> -->
+		                  	<!-- <div class="tnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a></div> -->
 
-				                  	<!-- <div class="tnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a></div> -->
+			                <div class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
 
-					                <div class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+			                <div class="post-author">By <a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php the_author_meta('display_name'); ?></a> on  <?php the_time(get_option('date_format')); ?></div>
 
-					                <div class="post-author">By <a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php the_author_meta('display_name'); ?></a> on  <?php the_time(get_option('date_format')); ?></div>
+			                <div class="excerpt"><?php the_excerpt(); ?></div>
 
-					                <div class="excerpt"><?php the_excerpt(); ?></div>
+			                <a class="black_arrow" href="<?php the_permalink(); ?>">READ MORE</a>
 
-					                <a class="black_arrow" href="<?php the_permalink(); ?>">READ MORE</a>
+			            <!-- </div> -->
 
-					            <!-- </div> -->
+			        <!-- </div> -->
 
-					        <!-- </div> -->
+		        </div> 
 
-				        </div> 
+		    <?php endwhile; ?>
 
-				    <?php endwhile; ?>
-
-				    <?php endif; ?>
-
-				</div>
-
-			    <a id="previousPosts" class="black_arrow pull-right clearfix" href="./news">Previous Posts</a>
-			    <div style="clear: both;"></div>
-			</div>
+		    <?php endif; ?>
 
 		</div>
 
+	    <a id="previousPosts" class="black_arrow pull-right clearfix" href="./news">Previous Posts</a>
+	    <div style="clear: both;"></div>
 	</div>
-</div>
+
 
 <?php get_sidebar(); ?>
 
