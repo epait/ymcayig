@@ -100,7 +100,7 @@ function my_custom_login_logo() {
 
     echo '<style type="text/css">
 
-    h1 a { background-image:url('.get_bloginfo('template_directory').'/img/kyymcaLogo.png) !important; background-position: 30% 50% !important; width:320px !important; height:82px !important; background-size: 320px 80px !important;}
+    h1 a { background-image:url('.get_bloginfo('template_directory').'/img/ymcayagLogo.png) !important; background-position: 30% 50% !important; width:320px !important; height:82px !important; background-size: 320px 80px !important;}
 
     </style>';
 
@@ -114,7 +114,7 @@ function my_custom_login_logo() {
 
     function put_my_url(){
 
-    return ('http://www.kyymca.org/'); // putting my URL in place of the WordPress one
+    return ('http://www.ymcayig.org/'); // putting my URL in place of the WordPress one
 
     }
 
