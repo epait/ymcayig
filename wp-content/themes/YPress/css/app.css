@@ -649,16 +649,13 @@ ul#menu-header.nav.navbar-nav {
  	margin: 0 auto;
  	width: 100%;
  }
- @media (max-width: 727px) {
- 	/*.homepage-button-title {
- 		font-size: 16px;
+ .homepageBlog {
+ 	padding-right: 30px;
+ }
+ @media (max-width: 760px) {
+ 	.homepageBlog {
+ 		padding-right: 15px;
  	}
- 	.homepage-button-wrapper {
-	 	margin: 0;
-	 }
-	 .homepage-button {
-	 	width: 30% !important;
-	 }*/
  }
 
 
@@ -817,10 +814,14 @@ ul.gce-list {
 	font-weight: bold;
 	font-size: 14px;
 }
-ul.gce-list li {
- 	/*line-height: 16px;*/
- 	margin-bottom: 10px;
- }
+.gce-feed {
+ 	margin-bottom: 15px;
+}
+@media (max-width: 990px) {
+	.sidebarWidgets {
+		margin-left: 0;
+	}
+}
 
 
 
@@ -866,6 +867,12 @@ ul.gce-list li {
 @media (min-width: 768px) {
 	.footer {
 		margin-top: 50px;
+	}
+	.footer-left {
+		padding-left: 0;
+	}
+	.footer-right {
+		padding-right: 0;
 	}
 }
 i.footer-icon {

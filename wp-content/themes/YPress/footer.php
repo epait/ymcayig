@@ -1,26 +1,24 @@
 	</div>
 </div>
 </div>
-	<div class="footer">
-		<div class="row">
-			<div class="col-sm-6">
-				<div class="footer-left">
-					<p>
-						<?php $copyright = get_field('copyright', 'option'); if ( $copyright != NULL ) { ?><?php the_field('copyright', 'option') ?><br><?php } ?>
-						<?php $organization = get_field('organization', 'option'); if ( $organization != NULL ) { ?><?php the_field('organization', 'option') ?><br><?php } ?>
-						<?php $website = get_field('website', 'option'); if ( $website != NULL ) { ?><a href="http://<?php the_field('website', 'option') ?>"><?php the_field('website', 'option') ?></a><br><?php } ?>
-						Web Development by <a href="http://www.ericpait.com">Eric Pait</a>
-					</p>
-				</div>
+	<div class="container-fluid footer">
+		<div class="row-fluid">
+			<div class="col-sm-6 footer-left">
+				<p>
+					<?php $copyright = get_field('copyright', 'option'); if ( $copyright != NULL ) { ?><?php the_field('copyright', 'option') ?><br><?php } ?>
+					<?php $organization = get_field('organization', 'option'); if ( $organization != NULL ) { ?><?php the_field('organization', 'option') ?><br><?php } ?>
+					<?php $website = get_field('website', 'option'); if ( $website != NULL ) { ?><a href="http://<?php the_field('website', 'option') ?>"><?php the_field('website', 'option') ?></a><br><?php } ?>
+					Web Development by <a href="http://www.ericpait.com">Eric Pait</a>
+				</p>
 			</div>
-			<div class="col-sm-6">
-				<div class="footer-right pull-right hidden-xs">
+			<div class="col-sm-6 footer-right">
+				<div class="pull-right hidden-xs">
 					<p>
 						<?php $phone = get_field('contact_phone', 'option'); if ( $phone != NULL ) { ?><i class="fa fa-phone footer-icon"></i><span id="phoneFooter"><?php the_field('contact_phone', 'option') ?></span><br><?php } ?>
 						<?php $email = get_field('contact_email', 'option'); if ( $email != NULL ) { ?><i class="fa fa-envelope-o footer-icon"></i><span id="emailFooter"><a href="mailto:<?php the_field('contact_email', 'option') ?>"><?php the_field('contact_email', 'option') ?></a></span><br><?php } ?>
 					</p>
 				</div>
-				<div class="footer-right visible-xs">
+				<div class="visible-xs">
 					<p>
 						<?php $phone = get_field('contact_phone', 'option'); if ( $phone != NULL ) { ?><i class="fa fa-phone footer-icon"></i><span id="phoneFooter"><?php the_field('contact_phone', 'option') ?></span><br><?php } ?>
 						<?php $email = get_field('contact_email', 'option'); if ( $email != NULL ) { ?><i class="fa fa-envelope-o footer-icon"></i><span id="emailFooter"><a href="mailto:<?php the_field('contact_email', 'option') ?>"><?php the_field('contact_email', 'option') ?></a></span><br><?php } ?>

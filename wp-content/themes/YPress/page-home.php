@@ -64,9 +64,9 @@ Template Name: Home Page
 		</div>
 	</div>
 </div>
-<div class="row-fluid main-content">
-	<div class="col-sm-8">
-		<div class="homeTitle"><h4>Youth and Government News</h4></div>
+<div class="row-fluid">
+	<div class="col-sm-8 homepageBlog">
+		<div class="homeTitle"><h4>Program News</h4></div>
 
 		<hr class="">
 
