@@ -983,48 +983,45 @@ i.footer-icon {
 
 
 
-/*Region Map*/
-.region-info {
-	margin-top: 20px;
+/*US Map*/
+.state 
+{
+	fill:#E0E0E0;
+	stroke:#646464;
+	stroke-width:1;
+	stroke-opacity:1;
 }
 
-[region="Metro"] {
-	fill: #ED1D24;
-}
-[region="Metro"]:hover {
-	cursor: pointer;
-	fill: #A92C31;
-}
-
-[region="North"] {
-	fill: #c6168d;
-}
-[region="North"]:hover {
-	cursor: pointer;
-	fill: #5C2D91;
+.territory
+{
+	opacity:0;
+	fill:#E0E0E0;
+	stroke:#646464;
+	stroke-width:1;
+	stroke-opacity:1;
 }
 
-[region="East"] {
-	fill: #00aeef;
-}
-[region="East"]:hover {
-	cursor: pointer;
-	fill: #0061AF;
-}
-
-[region="Central"] {
-	fill: #FCAF17;
-}
-[region="Central"]:hover {
-	cursor: pointer;
-	fill: #DD5928;
+.territoryborder
+{
+	opacity:0;
+	fill:none;
+	stroke:#A9A9A9;
+	stroke-width:2;
 }
 
-[region="West"] {
-	fill: #20BDBE;
+.border
+{
+	opacity:1;
+	fill:none;
+	stroke:#fff;
+	stroke-width:2;
 }
-[region="West"]:hover {
-	cursor: pointer;
-	fill: #006B6B;
+
+.circle
+{
+   opacity:1;
+   fill:#E0E0E0;
+   stroke:#646464;
+   stroke-width:1;
 }
 
