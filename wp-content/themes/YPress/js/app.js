@@ -62,11 +62,10 @@ customizeTwitter = function() {
 $(document).ready(function(){
 	if ($('.program-map')) {
 		$('.has-program').tooltip();
-		console.log('init tooltips');
 
 		$('.has-program').on('click', function() {
-			var state = $(this).data('original-title');
-			console.log(state);
+			var state = $(this).data('original-title').toLowerCase();
+			window.location = url + state;
 		});
 	}
 	customizeTwitter();

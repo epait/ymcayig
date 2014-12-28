@@ -36,6 +36,13 @@
 		<script src="<?php bloginfo('template_directory'); ?>/layerslider/js/layerslider.transitions.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
 		<!--<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.jtweetsanywhere-1.3.1.js"></script>-->
+		<script>
+			var url = <?php 
+					print '"';
+					print home_url( '/' );
+					print '"'; 
+				?>;
+		</script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/app.js"></script>
 		<script type="text/javascript">
 	      function hideURLbar() {
