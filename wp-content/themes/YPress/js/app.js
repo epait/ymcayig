@@ -60,13 +60,13 @@ customizeTwitter = function() {
 };
 
 $(document).ready(function(){
-	if ($('.region-map-county')) {
-		$('.region-map-county').tooltip();
+	if ($('.program-map')) {
+		$('.has-program').tooltip();
+		console.log('init tooltips');
 
-		$('.region-map-county').on('click', function() {
-			var region = $(this).attr('region').toLowerCase();
-			$('.region-info').not($('#' + region)).toggle(false);
-			$('#' + region).toggle(true);
+		$('.has-program').on('click', function() {
+			var state = $(this).data('original-title');
+			console.log(state);
 		});
 	}
 	customizeTwitter();

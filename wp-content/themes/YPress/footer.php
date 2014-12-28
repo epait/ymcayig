@@ -53,17 +53,19 @@
 	    <script type="text/javascript" charset="utf-8">
 	    	$(document).ready(function(){
 		        // Calling LayerSlider on the target element
-		        $('.layerslider').layerSlider({
-		        	skinsPath: "<?php bloginfo('template_directory'); ?>/layerslider/skins/",
-		        	skin: 'v5',
-		        	showCircleTimer: false,
-		        	thumbnailNavigation: 'disabled',
-		        	navButtons: false,
-		        	navStartStop: false,
-		        	navPrevNext: false,
-		        	pauseOnHover: false,
-		        	animateFirstSlide: false
-		        });
+		        if ($('.layerslider')) {
+			        $('.layerslider').layerSlider({
+			        	skinsPath: "<?php bloginfo('template_directory'); ?>/layerslider/skins/",
+			        	skin: 'v5',
+			        	showCircleTimer: false,
+			        	thumbnailNavigation: 'disabled',
+			        	navButtons: false,
+			        	navStartStop: false,
+			        	navPrevNext: false,
+			        	pauseOnHover: false,
+			        	animateFirstSlide: false
+			        });
+			    }
 		    });
 	    </script>
 		<div id="fb-root"></div>
