@@ -987,7 +987,7 @@ i.footer-icon {
 .state 
 {
 	fill:#E0E0E0;
-	stroke:#646464;
+	stroke:#fff;
 	stroke-width:1;
 	stroke-opacity:1;
 }
@@ -996,7 +996,7 @@ i.footer-icon {
 {
 	opacity:0;
 	fill:#E0E0E0;
-	stroke:#646464;
+	stroke:#fff;
 	stroke-width:1;
 	stroke-opacity:1;
 }
@@ -1021,7 +1021,7 @@ i.footer-icon {
 {
    opacity:1;
    fill:#E0E0E0;
-   stroke:#646464;
+   stroke:#fff;
    stroke-width:1;
 }
 

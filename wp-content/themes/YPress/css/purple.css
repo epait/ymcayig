@@ -33,6 +33,13 @@ a, h5, #logo, #logo a, a.headline, .post-title a, .homepage-button a, .sidebar-m
 #eventTitle, .officer-position, .sidebar-subtitle {
 	color: #c6168d;
 }
+.has-program {
+	fill: #92278f;
+}
+.has-program:hover {
+	cursor: pointer;
+	fill: #5c2e91;
+}
 
 
 /*Breadcrumb colors*/
