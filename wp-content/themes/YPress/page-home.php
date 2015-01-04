@@ -27,7 +27,7 @@ Template Name: Home Page
 
 			    				<div class="row">
 
-			    					<div class="col-sm-6 slider-column">
+			    					<div class="col-sm-7 slider-column">
 
 			    						<div class="slider-content">
 
@@ -41,7 +41,7 @@ Template Name: Home Page
 
 				                	</div>
 
-				                	<div class="col-sm-6 slider-column">
+				                	<div class="col-sm-5 slider-column">
 
 					                	<div class="featured-tnail">
 
