@@ -64,7 +64,8 @@ $(document).ready(function(){
 		$('.has-program').tooltip();
 
 		$('.has-program').on('click', function() {
-			var state = $(this).data('original-title').toLowerCase();
+			var state = $(this).data('original-title').split(' ').join('-').toLowerCase();
+			console.log(state);
 			window.location = url + state;
 		});
 	}
